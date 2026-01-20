@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>sample lab1</title>
+        
+    </head>
+    <body onload="main()">
+        <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+        </canvas>
+
+      
+        <div class="row btnbar">
+          <button id="clearBtn" type="button">Clear Canvas</button>
+        </div>
+
+        
+        <div class="row">
+          <div class="label">Drawing Mode:</div>
+          <div class="btnbar">
+            <button id="pointBtn" type="button">Squares</button>
+            <button id="triangleBtn" type="button">Triangles</button>
+            <button id="circleBtn" type="button">Circles</button>
+            <button id="starBtn" type="button">Stars</button>
+          </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="label">Shape Color:</div>
+
+          <div class="sliderRow">
+            <label for="redSlide">Red</label>
+            <input id="redSlide" type="range" min="0" max="100" value="60" />
+            <span id="redVal" class="value">60</span>
+          </div>
+
+          <div class="sliderRow">
+            <label for="greenSlide">Green</label>
+            <input id="greenSlide" type="range" min="0" max="100" value="80" />
+            <span id="greenVal" class="value">80</span>
+          </div>
+
+          <div class="sliderRow">
+            <label for="blueSlide">Blue</label>
+            <input id="blueSlide" type="range" min="0" max="100" value="95" />
+            <span id="blueVal" class="value">95</span>
+          </div>
+        </div>
+
+        
+        <div class="row">
+          <div class="sliderRow">
+            <label for="sizeSlide">Shape Size</label>
+            <input id="sizeSlide" type="range" min="1" max="40" value="10" />
+            <span id="sizeVal" class="value">10</span>
+          </div>
+
+          <div class="sliderRow">
+            <label for="segSlide">(Circles)Segment Count</label>
+            <input id="segSlide" type="range" min="3" max="60" value="12" />
+            <span id="segVal" class="value">12</span>
+          </div>
+        </div>
+
+        <div class="row">
+          <br>
+          by Florian Horn Sanders<br />
+          fhornsan@ucsc.edu
+        </div>        
+
+
+        <br><br><br><br><br><br><br>
+        
+        <div class="row btnbar">
+        <button id="drawPicBtn" type="button">Draw Picture</button>
+        </div>
+
+        <div class="row">
+          <div class="label">Reference drawing:</div>
+          <img
+            src="src/drawing.jpg"
+            alt="drawing of cat face with triangles"
+            style="max-width: 420px; border: 1px solid #ccc;"
+          />
+        </div>
+
+        <script src="lib/webgl-utils.js"></script>
+        <script src="lib/webgl-debug.js"></script>
+        <script src="lib/cuon-utils.js"></script>
+
+        <script src = "src/shapes.js"></script>
+        <script src="src/ModifiedColoredPoints.js"></script>
+    </body>
+
+</html>
