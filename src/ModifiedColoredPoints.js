@@ -239,6 +239,7 @@ function addCatFacePicture() {
   const NOSE = [0.95, 0.55, 0.65, 1.0]; // pink
   const TOOTH = [0.95, 0.95, 0.95, 1.0];
 
+  // draw the cat face
   // big ear outer (1)
   tri(-0.75, 0.55, -0.45, 0.55, -0.60, 0.88, ...FACE);
   // inner ear (2)
